@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("img/audience-auditorium.jpg") center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.keys {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.key {
+  background: #333;
+  border: 2px solid #666;
+  box-shadow: 0px 1px 5px #333;
+  color: rgb(231, 182, 18);
+  font-size: 0.7em;
+  height: 8%;
+  margin: 10px;
+  padding: 15px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+  width: 8%;
+}
+
+kbd {
+  color: #f2f2f2;
+  display: block;
+  font-size: 3em;
+  width: 100%;
+}
+
+.key:hover {
+  box-shadow: 0px 1px 5px #666;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid rgb(231, 182, 18);
+  box-shadow: 0px 1px 5px #666;
+  cursor: pointer;
+  transform: scale(1.1);
+}
